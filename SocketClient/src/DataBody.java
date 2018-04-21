@@ -1,7 +1,7 @@
 public class DataBody {
 
 	private final static byte SIZE = 32;
-	
+	private final byte BODY_SIZE = 65;
 	/*
 	public byte[] fillId(String id) {
 		byte[] filledId = null;
@@ -10,6 +10,7 @@ public class DataBody {
 	}
 	*/
 	public static byte[] fillPw(String pw) {
+		
 		System.out.println("파라미터는 : " + pw);
 		byte[] tempFilledPw = null;
 		tempFilledPw = pw.getBytes();
